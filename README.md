@@ -1,6 +1,6 @@
-# 📲 QR Code Generator
+# 📱 QR Code Generator
 
-The **QR Code Generator** is a sleek and interactive web tool that lets users generate custom QR codes from any text or URL. Built using vanilla HTML, CSS, and JavaScript, it provides an instant preview and customizable size options via a free public API.
+A clean and interactive QR Code Generator built with **HTML**, **CSS**, and **JavaScript**, using the free [QRServer API](https://goqr.me/api/). Instantly convert text or URLs into QR codes with selectable sizes ranging from **100x100** to **300x300**.
 
 ![QR Code Generator UI](screenshots/ss4.png)
 
