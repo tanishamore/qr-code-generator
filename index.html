@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script type="text/javascript">
+        function generateQR(){
+            const gApi = "https://api.qrserver.com/v1/create-qr-code/";
+            const myImg = document.getElementById("img");
+            const myText = document.getElementById("qrtext").value;
+            const mySize = document.getElementById("size").value;
+            const glassContent = document.querySelector('.glass-content');
+
+            if (myText !== '') {
+                myImg.src = `${gApi}?size=${mySize}&data=${encodeURIComponent(myText)}`;
+                myImg.style.opacity = "1";
+                glassContent.style.gap = "60px";
+
+            } else {
+                alert("Please enter some text to generate a QR code.");
+            }
+        }
+
+    </script>
+
+<div class="grid">
+    <div>
+        <h1 align="center" class="glassy-text">QR Code Generator</h1>
+    </div>
+
+    <div class="glass-container">
+        <div class="glass-content">
+          <div class="input-section">
+            <div class="size">
+              <p style="font-size: 20px;">Select your QR Code size:</p>
+              <select id="size">
+                <option value="100x100">100x100</option>
+                <option value="150x150">150x150</option>
+                <option value="200x200">200x200</option>
+                <option value="250x250" selected>250x250</option>
+                <option value="300x300">300x300</option>
+              </select>
+            </div>
+            <br>
+            <textarea placeholder="Enter Your Text Or Link" id="qrtext" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Generate" id="genButton" onclick="generateQR()">
+          </div>
+      
+          <div class="qr-display">
+            <img src="" id="img" />
+          </div>
+        </div>
+      </div>
+      
+
+    <footer><p>Developed by Tanisha More</p></footer>
+</body>
+</html>

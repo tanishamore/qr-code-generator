@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(ellipse at center, #FFF2E0 5%, #C0C9EE 40%, #A2AADB 60%,#898AC4 100%);
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.glass-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+.glassy-text {
+    color: #2a243f;
+    font-size: 3rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0); /* centered initially */
+    transition: transform 0.5s ease;
+  }
+  
+.qr-display img {
+    max-width: 250px;
+    border: 2px solid white;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}  
+
+textarea, #genButton {
+  outline: none;
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+#genButton{
+    border-radius: 20px;
+    background-color: #898AC4;
+    color: #f5f7fe;
+    font-size: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.size {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+
+  
+  
