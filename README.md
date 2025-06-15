@@ -2,7 +2,7 @@
 
 The **QR Code Generator** is a sleek and interactive web tool that lets users generate custom QR codes from any text or URL. Built using vanilla HTML, CSS, and JavaScript, it provides an instant preview and customizable size options via a free public API.
 
-![QR Code Generator UI](screenshot1.png)
+![QR Code Generator UI](screenshots/ss4.png)
 
 ---
 
@@ -31,3 +31,13 @@ The **QR Code Generator** is a sleek and interactive web tool that lets users ge
 - Enters **text or link** in the textarea  
 - Clicks **Generate** button  
 - A QR code is generated and displayed using:  
+
+---
+
+## 📸 Preview
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="screenshots/ss1.png" alt="Password Input" width="200"/>
+  <img src="screenshots/ss2.png" alt="Strength Meter" width="200"/>
+  <img src="screenshots/ss3.png" alt="Password Revealed" width="200"/>
+</div>
